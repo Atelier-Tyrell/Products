@@ -4,7 +4,9 @@
   "description": "back-end service for e-commerce site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon --watch server ./server",
+    "start-db": "psql postgres -U isaac -f ./dbs/setup.sql"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,10 @@
     "eslint": "^8.17.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
   }
 }
