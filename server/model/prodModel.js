@@ -39,27 +39,70 @@ module.exports = {
   getStyles: (productId) => (
     pool.query(
       `SELECT
-      p.id AS product_id,
+      s.product_id AS product_id,
       json_agg(
         json_build_object(
           'style_id', s.id,
-          'name', s.name
+          'name', s.name,
+          'original_price', s.original_price,
+          'sale_price', s.sale_price,
+          'default?', s.default_style,
+          'photos', phjoin.photo_arr,
+          'skus', skujoin.sku_obj
         )
       ) AS results
-      FROM products p
-      LEFT OUTER JOIN styles s
-      ON p.id = s.product_id
-      LEFT OUTER JOIN photos ph
-      ON s.id = ph.style_id
-      WHERE p.id = ${productId}
-      GROUP BY p.id
-      ORDER BY p.id ASC`,
+      FROM styles s
+      LEFT OUTER JOIN (
+        SELECT
+          style_id,
+          json_agg(
+            json_build_object(
+              'thumbnail_url', ph.thumbnail_url,
+              'url', ph.main_url
+            )
+          ) as photo_arr
+        FROM
+          photos ph
+        GROUP BY style_id
+      ) phjoin
+      ON s.id = phjoin.style_id
+      LEFT OUTER JOIN (
+        SELECT
+          style_id,
+          json_object_agg(
+            sk.id::TEXT, json_build_object(
+              'quantity', sk.quantity,
+              'size', sk.size
+            )
+          ) sku_obj
+        FROM
+          skus sk
+        GROUP BY style_id
+      ) skujoin
+      ON s.id = skujoin.style_id
+      WHERE s.product_id = ${productId}
+      GROUP BY s.product_id`,
     )
-      .then((res) => res.rows)
+      .then((res) => {
+        const result = res.rows.length === 0 ? { product_id: `${productId}`, results: [] } : res.rows;
+        return result;
+      })
       .catch((err) => {
         console.log(err);
         return 'Not Found';
       })
   ),
-  getRelated: () => {},
+  getRelated: (productId) => (
+    pool.query(
+      `SELECT
+      json_agg(related_id)
+      FROM related r
+      WHERE r.product_id = ${productId}`,
+    )
+      .then((res) => res.rows[0].json_agg)
+      .catch((err) => {
+        console.log(err);
+        return 'Not Found';
+      })
+  ),
 };
