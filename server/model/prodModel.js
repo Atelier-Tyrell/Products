@@ -28,8 +28,8 @@ module.exports = {
       ON p.id = f.product_id
       WHERE p.id = ${productId}
       GROUP BY p.id
-      ORDER BY p.id ASC
-      `)
+      ORDER BY p.id ASC`,
+    )
       .then((res) => res.rows)
       .catch((err) => {
         console.log(err);
@@ -39,24 +39,22 @@ module.exports = {
   getStyles: (productId) => (
     pool.query(
       `SELECT
-      p.id,
-      p.name,
-      p.slogan,
-      p.description,
-      p.category,
-      p.default_price,
+      p.id AS product_id,
       json_agg(
         json_build_object(
-          'feature', f.feature,
-          'value', f.value
+          'style_id', s.id,
+          'name', s.name
         )
-      ) AS features
-      FROM products p JOIN features f
-      ON p.id = f.product_id
+      ) AS results
+      FROM products p
+      LEFT OUTER JOIN styles s
+      ON p.id = s.product_id
+      LEFT OUTER JOIN photos ph
+      ON s.id = ph.style_id
       WHERE p.id = ${productId}
       GROUP BY p.id
-      ORDER BY p.id ASC
-      `)
+      ORDER BY p.id ASC`,
+    )
       .then((res) => res.rows)
       .catch((err) => {
         console.log(err);
