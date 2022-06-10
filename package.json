@@ -4,7 +4,7 @@
   "description": "back-end service for e-commerce site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --forceExit",
     "start": "npx nodemon --watch server ./server",
     "start-db": "psql postgres -U isaac -f ./dbs/setup.sql"
   },
@@ -21,7 +21,9 @@
   "devDependencies": {
     "eslint": "^8.17.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^28.1.1",
+    "supertest": "^6.2.3"
   },
   "dependencies": {
     "body-parser": "^1.20.0",

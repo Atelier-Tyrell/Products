@@ -8,9 +8,9 @@ const pool = new Pool({
   port: 5432,
 });
 
-pool
-  .connect()
-  .then(() => console.log('connected'))
-  .catch((err) => console.error('err', err));
+// pool
+//   .connect()
+//   .then(() => console.log('connected'))
+//   .catch((err) => console.error('err', err));
 
 module.exports = pool;

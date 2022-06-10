@@ -30,7 +30,7 @@ module.exports = {
       GROUP BY p.id
       ORDER BY p.id ASC`,
     )
-      .then((res) => res.rows)
+      .then((res) => res.rows[0])
       .catch((err) => {
         console.log(err);
         return 'Not Found';
