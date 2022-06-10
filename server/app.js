@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express'); // npm installed
 const bodyParser = require('body-parser');
+const path = require("path");
 
 const db = require('./db');
 const router = require('./routes.js')
@@ -11,6 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(bodyParser.json());
 
-app.use('/products', router);
+// const DIST_DIR = path.join(__dirname, '../../Client/public');
+// app.use(express.static(DIST_DIR));
+
+app.use('', router);
 
 module.exports = app;

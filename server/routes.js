@@ -6,12 +6,12 @@ const {
   related,
 } = require('./controller');
 
-router.get('/', allProducts);
+router.get('/products', allProducts);
 
-router.get('/:product_id', productInfo);
+router.get('/product/:product_id', productInfo);
 
-router.get('/:product_id/styles', styles);
+router.get('/style/:product_id', styles);
 
-router.get('/:product_id/related', related);
+router.get('/related/:product_id', related);
 
 module.exports = router;
