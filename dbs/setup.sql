@@ -90,3 +90,11 @@ COPY related(id, product_id, related_id)
 FROM '/home/isaac/SDC/data/related.csv'
 DELIMITER ','
 CSV HEADER;
+
+CREATE INDEX featureIndex on features (product_id);
+CREATE INDEX styleIndex on styles (product_id);
+CREATE INDEX photoIndex on photos (style_id);
+CREATE INDEX skuIndex on skus (style_id);
+CREATE INDEX relatedIndex on related (product_id);
+
+update styles SET sale_price=null WHERE sale_price='null';
