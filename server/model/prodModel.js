@@ -1,5 +1,7 @@
 const pool = require('../db');
 
+// -- sudo -u isaac psql -d products
+
 module.exports = {
   getAll: (count = 5, page = 1) => {
     const skipPage = count * (page - 1);

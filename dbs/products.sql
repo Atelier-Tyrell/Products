@@ -1,5 +1,3 @@
--- sudo -u isaac psql -d products
-
 DROP DATABASE IF EXISTS products;
 CREATE DATABASE products;
 
@@ -7,8 +5,6 @@ CREATE DATABASE products;
 
 DROP SCHEMA IF EXISTS products CASCADE;
 CREATE SCHEMA products;
--- grant usage on schema products to public;
--- grant create on schema products to public;
 
 DROP TABLE IF EXISTS products CASCADE;
 CREATE TABLE products (
