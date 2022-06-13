@@ -13,9 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(bodyParser.json());
 
-app.get("/loaderio-db8be098a46b7c938fe5681a58a1e510.txt", (req, res) => {
-  res.sendFile(path.join(__dirname, "./loaderio.txt"));
-});
+
 // const DIST_DIR = path.join(__dirname, '../../Client/public');
 // app.use(express.static(DIST_DIR));
 
