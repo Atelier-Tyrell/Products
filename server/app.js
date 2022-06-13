@@ -1,5 +1,5 @@
 require('dotenv').config();
-require('newrelic');
+// require('newrelic');
 const express = require('express'); // npm installed
 const bodyParser = require('body-parser');
 const path = require("path");
@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(bodyParser.json());
 
-const DIST_DIR = path.join(__dirname, '../../Client/public');
-app.use(express.static(DIST_DIR));
+// const DIST_DIR = path.join(__dirname, '../../Client/public');
+// app.use(express.static(DIST_DIR));
 
 app.use('', router);
 
