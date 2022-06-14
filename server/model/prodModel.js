@@ -20,14 +20,17 @@ module.exports = {
       p.description,
       p.category,
       p.default_price,
-      json_agg(
-        json_build_object(
-          'feature', f.feature,
-          'value', f.value
-        )
-      ) AS features
-      FROM products p JOIN features f
-      ON p.id = f.product_id
+      (SELECT
+        json_agg(
+          json_build_object(
+            'feature', f.feature,
+            'value', f.value
+          )
+        ) AS features
+        FROM features f WHERE f.product_id = p.id
+        GROUP BY f.product_id
+      )
+      FROM products p
       WHERE p.id = ${productId}
       GROUP BY p.id
       ORDER BY p.id ASC`,

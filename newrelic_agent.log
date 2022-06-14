@@ -65,3 +65,47 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":111632,"time":"2022-06-13T02:34:17.668Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
 {"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":111632,"time":"2022-06-13T02:34:17.671Z","msg":"Agent state changed from connected to started."}
 {"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":111632,"time":"2022-06-13T02:34:18.671Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:39.210Z","msg":"Using New Relic for Node.js. Agent version: 8.14.1; Node version: v16.15.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:39.365Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:39.449Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:39.485Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:39.485Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:41.431Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:41.431Z","msg":"Connected to collector-001.newrelic.com:443 with agent run ID BTwjdK2r6iH5ADWfTx0OgpJiqRn4AAgBAAAnIQEAAjSBAgQdDobvAwAGOC4xNC4xAApJc2FhY0xpbnV4AANTREM.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:41.431Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3514191/applications/487491311","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:41.432Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:41.435Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144513,"time":"2022-06-14T23:28:42.435Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:12.612Z","msg":"Using New Relic for Node.js. Agent version: 8.14.1; Node version: v16.15.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:12.680Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:12.706Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:12.710Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:12.710Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:14.367Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:14.367Z","msg":"Connected to collector-001.newrelic.com:443 with agent run ID BVt8-Sj-ApyWADWfTx0OgpJiqRo0AAgBAAAnIQEAAjWvAgQdDobvAwAGOC4xNC4xAApJc2FhY0xpbnV4AANTREM.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:14.367Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3514191/applications/487491311","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:14.368Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:14.371Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144815,"time":"2022-06-14T23:29:15.371Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:17.692Z","msg":"Using New Relic for Node.js. Agent version: 8.14.1; Node version: v16.15.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:17.760Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:17.784Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:17.808Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:17.808Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:19.632Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:19.632Z","msg":"Connected to collector-001.newrelic.com:443 with agent run ID Bd66oqu4P_KQADWfTx0OgpJiqRo0AAgBAAAnIQEAAjX2AgQdDobvAwAGOC4xNC4xAApJc2FhY0xpbnV4AANTREM.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:19.632Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3514191/applications/487491311","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:19.633Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:19.637Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144886,"time":"2022-06-14T23:29:20.637Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:20.915Z","msg":"Using New Relic for Node.js. Agent version: 8.14.1; Node version: v16.15.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:20.985Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:21.010Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:21.013Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:21.013Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:21.858Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:21.858Z","msg":"Connected to collector-001.newrelic.com:443 with agent run ID BVbJcwS1BC_UADWfTx0OgpJiqRo0AAgBAAAnIQEAAjYsAgQdDobvAwAGOC4xNC4xAApJc2FhY0xpbnV4AANTREM.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:21.859Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3514191/applications/487491311","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:21.860Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:21.863Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"IsaacLinux","pid":144940,"time":"2022-06-14T23:29:22.863Z","msg":"Starting initial 1000ms harvest."}
