@@ -1,5 +1,5 @@
 require('dotenv').config();
-require('newrelic');
+// require('newrelic');
 const express = require('express'); // npm installed
 const bodyParser = require('body-parser');
 const path = require("path");
